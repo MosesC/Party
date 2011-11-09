@@ -1,0 +1,60 @@
+/* 
+    Document   : CSS Tester
+    Created on : Oct 26, 2011, 10:15:34 AM
+    Author     : SirCharles
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+a:link {color:#FF0000;}    /* unvisited link */
+a:visited {color:#00FF00;} /* visited link */
+a:hover {color:#FF00FF;}   /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+
+/*div specific active link rules, can only be used once b/c its an id*/
+#navbar a:link 
+{
+text-decoration: underline; 
+color: blue;
+background: green;
+}
+
+/*class specifinc active link rules, can be reused*/
+.styleone:link
+{
+text-decoration: underline; 
+color: #FFF; 
+background: #008;
+}
+
+body 
+{
+background-image: url('background.jpg');
+background-repeat:repeat-x;
+
+}
+
+.container 
+{
+width: 967px;
+background-color: white;
+text-align: left;
+overflow: hidden; /*what is overflow?*/
+position: relative;
+}
+
+.container .borders
+{
+border-right-color: #000;
+border-left-color:#000;
+border-right-width: 1px;
+border-left-width: 1px;
+border-right-style: solid;
+border-left-style: solid;
+}
+
+
